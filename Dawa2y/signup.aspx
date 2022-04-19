@@ -188,11 +188,22 @@
                     <td class="auto-style14"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style11">
                         <asp:Label ID="Label21" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Retype Password:"></asp:Label>
                     </td>
-                    <td class="auto-style9">
+                    <td class="auto-style12">
                         <asp:TextBox ID="passtxt1" runat="server" TextMode="Password"></asp:TextBox>
+                    </td>
+                    <td class="auto-style13"></td>
+                    <td class="auto-style14"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <asp:Label ID="Label24" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Profile Photo:"></asp:Label>
+                        <asp:Label ID="Label25" runat="server" Font-Names="Bell MT" Font-Size="Small" Text="(Optional)"></asp:Label>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:FileUpload ID="FileUpload1" runat="server" />
                     </td>
                     <td class="auto-style8">&nbsp;</td>
                     <td>&nbsp;</td>
