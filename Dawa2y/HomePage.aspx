@@ -26,9 +26,10 @@
             height: 97px;
             width: 780px;
         }
+
         body {
        // background-color: whitesmoke;
-        margin-left:7px;
+        //margin-left:5px;
         }
     </style>
 </head>
@@ -39,12 +40,12 @@
                 <td class="auto-style4">
                     <img alt="Logo" class="auto-style1" src="images/medical-pharmacy-logo.jpg" /></td>
                 <td class="auto-style5" >
-                    <asp:Menu ID="Menu1" runat="server" BorderColor="White" StaticMenuStyle-BackColor="#339966" BorderStyle="None" Font-Names="Agency FB" Font-Size="X-Large" ForeColor="White" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" BackColor="White" Height="100px">
+                    <asp:Menu ID="Menu1" runat="server"  StaticMenuStyle-BackColor="#339966" BorderStyle="None" Font-Names="Agency FB" Font-Size="Larger" ForeColor="White"  OnMenuItemClick="Menu1_MenuItemClick1" Orientation="Horizontal" BackColor="White" Height="100px">
                         <DynamicItemTemplate>
                             <%# Eval("Text") %>
                         </DynamicItemTemplate>
                         <Items>
-                            <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="Home" Value="Home" ></asp:MenuItem>
                             <asp:MenuItem Text="Login" Value="Login"></asp:MenuItem>
                             <asp:MenuItem Text="Signup" Value="Signup"></asp:MenuItem>
                             <asp:MenuItem Text="Categories" Value="Categories"></asp:MenuItem>
@@ -53,7 +54,7 @@
                             <asp:MenuItem Text="About Us" Value="About Us"></asp:MenuItem>
                             <asp:MenuItem Text="Shipping Policy" Value="Shipping Policy"></asp:MenuItem>
                         </Items>
-                        <StaticMenuItemStyle  BorderWidth="10px" Font-Names="Agency FB" Font-Overline="False" Font-Size="X-Large" HorizontalPadding="0px" ItemSpacing="5px" VerticalPadding="5px" BorderColor="#339966" />
+                        <StaticMenuItemStyle  BorderWidth="10px" Font-Names="Agency FB" Font-Overline="False" Font-Size="X-Large" HorizontalPadding="5px" ItemSpacing="5px" VerticalPadding="5px" BorderColor="#339966" />
                         <StaticMenuStyle HorizontalPadding="10px" VerticalPadding="10px" />
                         <StaticSelectedStyle BackColor="#339966" HorizontalPadding="70px" ItemSpacing="5px" VerticalPadding="10px" Width="5px" />
                     </asp:Menu>

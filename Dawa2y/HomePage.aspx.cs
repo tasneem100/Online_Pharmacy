@@ -18,5 +18,10 @@ namespace Dawa2y
         {
 
         }
+
+        protected void Menu1_MenuItemClick1(object sender, MenuEventArgs e)
+        {
+
+        }
     }
 }
