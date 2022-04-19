@@ -22,7 +22,7 @@
             text-align: left;
         }
         .auto-style9 {
-            width: 115px;
+            width: 129px;
             text-align: left;
         }
         .auto-style8 {
@@ -35,7 +35,7 @@
         }
         .auto-style6 {
             height: 23px;
-            width: 115px;
+            width: 129px;
             text-align: left;
         }
         .auto-style10 {
@@ -51,7 +51,7 @@
             height: 26px;
         }
         .auto-style12 {
-            width: 115px;
+            width: 129px;
             text-align: left;
             height: 26px;
         }
@@ -129,8 +129,8 @@
                         <asp:Label ID="Label14" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Gender:"></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <asp:RadioButton ID="Male" runat="server" CausesValidation="True" OnCheckedChanged="Male_CheckedChanged" Text="Male" />
                         <asp:RadioButton ID="Female" runat="server" Text="Female" />
+                        <asp:RadioButton ID="genderM" runat="server" Text="Male" />
                     </td>
                     <td class="auto-style8">&nbsp;</td>
                     <td>&nbsp;</td>

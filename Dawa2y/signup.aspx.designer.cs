@@ -132,15 +132,6 @@ namespace Dawa2y
         protected global::System.Web.UI.WebControls.Label Label14;
 
         /// <summary>
-        /// Male control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton Male;
-
-        /// <summary>
         /// Female control.
         /// </summary>
         /// <remarks>
@@ -148,6 +139,15 @@ namespace Dawa2y
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton Female;
+
+        /// <summary>
+        /// genderM control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton genderM;
 
         /// <summary>
         /// Label16 control.
