@@ -54,7 +54,7 @@
                             <asp:MenuItem Text="Categories" Value="Categories"></asp:MenuItem>
                             <asp:MenuItem Text="Contact" Value="Contact"></asp:MenuItem>
                             <asp:MenuItem Text="Store Locator" Value="Store Locator"></asp:MenuItem>
-                            <asp:MenuItem Text="About Us" Value="About Us"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/aboutus.aspx" Target="F5"></asp:MenuItem>
                             <asp:MenuItem Text="Shipping Policy" Value="Shipping Policy"></asp:MenuItem>
                         </Items>
                         <StaticMenuItemStyle  BorderWidth="10px" Font-Names="Agency FB" Font-Overline="False" Font-Size="X-Large" HorizontalPadding="5px" ItemSpacing="5px" VerticalPadding="5px" BorderColor="#339966" />
