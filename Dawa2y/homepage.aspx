@@ -4,6 +4,66 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+                    <style>
+                        #ays_tooltip,.ays_tooltip_class {
+                    		display: none;
+                    		position: absolute;
+    						z-index: 999999999;
+                            background-color: #ffffff;
+                            
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                            opacity:1;
+                            border: 1px solid #b7b7b7;
+                            border-radius: 3px;
+                            box-shadow: rgba(0,0,0,0) 0px 0px 15px  1px;
+                            color: #ff0000;
+                            padding: 5px;
+                            font-size: 12px;
+                            text-transform: none;
+							;
+                        }
+                        
+                        #ays_tooltip > *, .ays_tooltip_class > * {
+                            color: #ff0000;
+                            font-size: 12px;
+                        }
+
+                        @media screen and (max-width: 768px){
+                        	#ays_tooltip,.ays_tooltip_class {
+                        		font-size: 12px;
+                        	}
+                        	#ays_tooltip > *, .ays_tooltip_class > * {	                            
+	                            font-size: 12px;
+	                        }
+                        }
+                        
+                       
+                    </style>
+                <style>
+                *:not(input):not(textarea)::selection {
+            background-color: transparent !important;
+            color: inherit !important;
+        }
+
+        *:not(input):not(textarea)::-moz-selection {
+            background-color: transparent !important;
+            color: inherit !important;
+        }
+
+                *:not(input):not(textarea):not(button) {
+            -webkit-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+            -webkit-touch-callout: none !important;
+        }
+
+            </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400%7CNunito+Sans:900%2C400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
+
     <title></title>
 </head>
 
@@ -701,8 +761,6 @@
 
 				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2021/02/5052197003789-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2021/02/5052197003789-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"></figure>
 			</a>
-					<div class="product-label">
-		</div>
 	<div class="product-group-button one-button no-addtocart"></div>			
 		</div>
 		<div class="meta-wrapper">
@@ -937,13 +995,9 @@
                         </div>
                         <div class="vc_row wpb_row vc_row-fluid vc_column-gap-default ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_hidden-xs">
 	<div class="wpb_wrapper">
-	<div class="vc_empty_space" style="height: 30px"><span class="vc_empty_space_inner"></span></div>	</div>
-</div></div>	<div class="vc_row wpb_row vc_row-fluid vc_column-gap-default ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_hidden-xs">
-	<div class="wpb_wrapper">
-	<div class="vc_empty_space" style="height: 20px"><span class="vc_empty_space_inner"></span></div>	</div>
-</div></div>	<div class="vc_row wpb_row vc_row-fluid bg-center vc_custom_1598237771188 vc_column-gap-default ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12">
-	<div class="wpb_wrapper">
-	    <div class="ts-mailchimp-subscription-shortcode form-center text-default "><div class="widget-container mailchimp-subscription">			<div class="subscribe-widget">
+	<div class="vc_empty_space" style="height: 20px">
+        <div class="widget-container mailchimp-subscription">
+            <div class="subscribe-widget">
 				
 								
 				<script>(function() {
@@ -961,13 +1015,28 @@
 		}
 	}
 })();
-</script><!-- Mailchimp for WordPress v4.8.7 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-7041" method="post" data-id="7041" data-name="Subscription Form"><div class="mc4wp-form-fields"><div class="subscribe-email">
-	<input type="email" name="EMAIL" placeholder="Enter your email address" required="">
-	<button class="button button-primary" type="submit">Subscribe</button>
-</div></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1650415986"><input type="hidden" name="_mc4wp_form_id" value="7041"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin -->			</div>
-
-			</div></div>	</div>
-</div></div>
+</script><!-- Mailchimp for WordPress v4.8.7 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-7041" method="post" data-id="7041" data-name="Subscription Form">
+                    <div class="mc4wp-form-fields">
+                        <div class="subscribe-email">
+                            <input type="email" name="EMAIL" placeholder="Enter your email address" required="">
+                            <button class="button button-primary" type="submit">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <label style="display: none !important;">
+                    Leave this field empty if you're human: 
+                    <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1650415986"><input type="hidden" name="_mc4wp_form_id" value="7041"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response">
+                    </div>
+                </form>
+                <!-- / Mailchimp for WordPress Plugin -->			
+            </div>
+        </div>
+        </div>
+                            </div>
+</div>
+                        </div>
 			</article>
 					</div>
 	</div>
@@ -1197,720 +1266,12 @@
 </div><div class="wpb_column vc_column_container vc_col-sm-2">
 	<div class="wpb_wrapper">
 		</div>
-</div></div><div class="vc_row-full-width"></div>	<div class="vc_row wpb_row vc_row-fluid vc_custom_1611480774707 vc_column-gap-default ts-row-wide" data-vc-full-width="true" data-vc-full-width-init="true" style="position: relative; left: -10px; box-sizing: border-box; width: 794px; padding-left: 10px; padding-right: 10px;"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_hidden-xs">
-	<div class="wpb_wrapper">
-                    </div>
-</div></div><div class="vc_row-full-width"></div>
-				</div>
-			</div>
-						
-						<div class="end-footer footer-area">
-				<div class="container">
-						<div class="vc_row wpb_row vc_row-fluid vc_column-gap-default ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12">
-	<div class="wpb_wrapper">
-	<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#f0f2f5;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#f0f2f5;" class="vc_sep_line"></span></span>
-</div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1596621074116 vc_column-gap-default vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element  vc_custom_1610474184427 ts-aligncenter-mobile">
-	</div>
-</div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div>	</div>
 </div></div>
 				</div>
 			</div>
 					</div>
 	</footer>
-	</div><!-- #page -->
-
-<div id="to-top" class="scroll-button off" style="display: none;">
-	<a class="scroll-button" href="javascript:void(0)" title="Back to Top">Back to Top</a>
-</div>
-
-<div id="ays_tooltip"><p>You cannot copy content of this page</p>
-</div>
-                    <style>
-                        #ays_tooltip,.ays_tooltip_class {
-                    		display: none;
-                    		position: absolute;
-    						z-index: 999999999;
-                            background-color: #ffffff;
-                            
-                            background-repeat: no-repeat;
-                            background-position: center center;
-                            background-size: cover;
-                            opacity:1;
-                            border: 1px solid #b7b7b7;
-                            border-radius: 3px;
-                            box-shadow: rgba(0,0,0,0) 0px 0px 15px  1px;
-                            color: #ff0000;
-                            padding: 5px;
-                            font-size: 12px;
-                            text-transform: none;
-							;
-                        }
-                        
-                        #ays_tooltip > *, .ays_tooltip_class > * {
-                            color: #ff0000;
-                            font-size: 12px;
-                        }
-
-                        @media screen and (max-width: 768px){
-                        	#ays_tooltip,.ays_tooltip_class {
-                        		font-size: 12px;
-                        	}
-                        	#ays_tooltip > *, .ays_tooltip_class > * {	                            
-	                            font-size: 12px;
-	                        }
-                        }
-                        
-                       
-                    </style>
-                <style>
-                *:not(input):not(textarea)::selection {
-            background-color: transparent !important;
-            color: inherit !important;
-        }
-
-        *:not(input):not(textarea)::-moz-selection {
-            background-color: transparent !important;
-            color: inherit !important;
-        }
-
-                *:not(input):not(textarea):not(button) {
-            -webkit-user-select: none !important;
-            -moz-user-select: none !important;
-            -ms-user-select: none !important;
-            user-select: none !important;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-            -webkit-touch-callout: none !important;
-        }
-
-            </style>
-    <script>
-        // window.addEventListener("DOMContentLoaded",function(){
-            function stopPrntScr() {
-                var inpFld = document.createElement("input");
-                inpFld.setAttribute("value", "Access Denied");
-                inpFld.setAttribute("width", "0");
-                inpFld.style.height = "0px";
-                inpFld.style.width = "0px";
-                inpFld.style.border = "0px";
-                document.body.appendChild(inpFld);
-                inpFld.select();
-                document.execCommand("copy");
-                inpFld.remove(inpFld);
-            }
-
-            (function ($) {
-                'use strict';
-                $(function () {
-                    let all = $('*').not('script, meta, link, style, noscript, title'),
-                        tooltip = $('#ays_tooltip'),
-                        tooltipClass = "mouse";
-                    if (tooltipClass == "mouse" || tooltipClass == "mouse_first_pos") {
-    	                                        let startTime, endTime;
-                        all.on('touchstart', function (e) {
-                            startTime = Date.now();
-                        });
-
-                        all.on('touchend', function (e) {
-                            endTime = Date.now();
-                            if (endTime - startTime > 1000) {
-                                e.preventDefault();
-                            }
-                            let cordinate_x = e.pageX || e.originalEvent.changedTouches[0].pageX;
-                            let cordinate_y = (e.pageY || e.originalEvent.changedTouches[0].pageY) - 30;
-                            let windowWidth = $(window).width();
-                            if (cordinate_y < tooltip.outerHeight()) {
-                                tooltip.css({'top': (cordinate_y + tooltip.outerHeight() - 10) + 'px'});
-                            } else {
-                                tooltip.css({'top': (cordinate_y - tooltip.outerHeight()) + 'px'});
-                            }
-                            if (cordinate_x > (windowWidth - tooltip.outerWidth())) {
-                                tooltip.css({'left': (cordinate_x - tooltip.outerWidth()) + 'px'});
-                            } else {
-                                tooltip.css({'left': (cordinate_x + 5) + 'px'});
-                            }
-
-                        });
-    	                                    } else {
-                        tooltip.addClass(tooltipClass);
-                    }
-    				                    $(window).on('keyup', function (e) {
-                        let keyCode = e.keyCode ? e.keyCode : e.which;
-                        if (keyCode == 44) {
-                            stopPrntScr();
-                            show_tooltip( );
-                            audio_play();
-                        }
-                    });
-    				
-
-    				                    $(document).on('contextmenu', function (e) {
-                        let target = $(event.target);
-                        if (!target.is("")) {
-                            let t = e || window.event;
-                            let n = t.target || t.srcElement;
-                            if (n.nodeName !== "A") {
-                                show_tooltip( );
-                                audio_play();
-                            }
-                            return false;
-                        }
-                    });
-    	            
-
-                                        $(document).on('contextmenu', function (e) {
-                        let target = $(event.target);
-                        if (target.is("img") || target.is("div.ays_tooltip_class")) {
-                            let t = e || window.event;
-                            let n = t.target || t.srcElement;
-                            if (n.nodeName !== "A") {
-                                show_tooltip( );
-                                audio_play();
-                            }
-                            return false;
-                        }
-                    });
-                    
-    	            
-    				                    $(document).on('dragstart', function () {
-                        let target = $(event.target);
-                        if (!target.is("")) {
-                            show_tooltip( );
-                            audio_play();
-                            return false;
-                        }
-                    });
-    				
-    				
-                    $(window).on('keydown', function (event) {
-                        var sccp_selObj = window.getSelection();
-                        var check_selectors = true;
-                        if (!sccp_selObj.rangeCount < 1) {
-                            var sccp_selRange = sccp_selObj.getRangeAt(0);
-                            var sccp_selection_selector = sccp_selRange.startContainer.parentElement;
-                            check_selectors = !$(sccp_selection_selector).is("");
-                        }
-
-                        if (check_selectors) {
-                            var isOpera = (BrowserDetect.browser === "Opera");
-
-                            var isFirefox = (BrowserDetect.browser === 'Firefox');
-
-                            var isSafari = (BrowserDetect.browser === 'Safari');
-
-                            var isIE = (BrowserDetect.browser === 'Explorer');
-                            var isChrome = (BrowserDetect.browser === 'Chrome');
-                            var isMozilla = (BrowserDetect.browser === 'Mozilla');
-
-                            if (BrowserDetect.OS === 'Windows') {
-        						                                if (isChrome) {
-                                    if (((event.ctrlKey && event.shiftKey) && (
-                                        event.keyCode === 73 ||
-                                        event.keyCode === 74 ||
-                                        event.keyCode === 68 ||
-                                        event.keyCode === 67))) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-                                if (isFirefox) {
-                                    if (((event.ctrlKey && event.shiftKey) && (
-                                        event.keyCode === 73 ||
-                                        event.keyCode === 74 ||
-                                        event.keyCode === 67 ||
-                                        event.keyCode === 75 ||
-                                        event.keyCode === 69)) ||
-                                        event.keyCode === 118 ||                                    
-                                        (event.keyCode === 112 && event.shiftKey) ||
-                                        (event.keyCode === 115 && event.shiftKey) ||
-                                        (event.keyCode === 118 && event.shiftKey) ||
-                                        (event.keyCode === 120 && event.shiftKey)) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-                                if (isOpera) {
-                                    if (((event.ctrlKey && event.shiftKey) && (
-                                        event.keyCode === 73 ||
-                                        event.keyCode === 74 ||
-                                        event.keyCode === 67 ||
-                                        event.keyCode === 88 ||
-                                        event.keyCode === 69))) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-                                if (isIE) {
-                                    if ((event.keyCode === 123 && event.shiftKey)) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }                         
-                                if (isMozilla) {
-                                    if ((event.ctrlKey && event.keyCode === 73) || 
-                                        (event.altKey && event.keyCode === 68)) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-        						
-        						                                if ((event.keyCode === 83 && event.ctrlKey)) {
-                                    show_tooltip();
-                                    audio_play();
-                                    return false;
-                                }
-        						
-        						                                if ((event.keyCode === 65 && event.ctrlKey)) {
-
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if (event.keyCode === 67 && event.ctrlKey && !event.shiftKey) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 86 && event.ctrlKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 88 && event.ctrlKey)) {
-                                                                            show_tooltip( );
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 85 && event.ctrlKey)) {
-                                    show_tooltip( );
-                                    audio_play();
-                                    return false;
-                                }
-        						
-        						
-        						
-                                
-                                
-                                                                
-
-                                
-                                
-                                
-                                
-                                
-        						                                if (event.keyCode === 123 || (event.keyCode === 123 && event.shiftKey)) {
-                                    show_tooltip();
-                                    audio_play();
-                                    return false;
-                                }
-        						                            } else if (BrowserDetect.OS === 'Linux') {
-        						                                if (isChrome) {
-                                    if (
-                                        (
-                                            (event.ctrlKey && event.shiftKey) &&
-                                            (event.keyCode === 73 ||
-                                                event.keyCode === 74 ||
-                                                event.keyCode === 67
-                                            )
-                                        ) ||
-                                        (event.ctrlKey && event.keyCode === 85)
-                                    ) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-                                if (isFirefox) {
-                                    if (((event.ctrlKey && event.shiftKey) && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67 || event.keyCode === 75 || event.keyCode === 69)) || event.keyCode === 118 || event.keyCode === 116 || (event.keyCode === 112 && event.shiftKey) || (event.keyCode === 115 && event.shiftKey) || (event.keyCode === 118 && event.shiftKey) || (event.keyCode === 120 && event.shiftKey) || (event.keyCode === 85 && event.ctrlKey)) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-                                if (isOpera) {
-                                    if (((event.ctrlKey && event.shiftKey) && (event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 67 || event.keyCode === 88 || event.keyCode === 69)) || (event.ctrlKey && event.keyCode === 85)) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-        						
-        						                                if ((event.keyCode === 83 && event.ctrlKey)) {
-                                    show_tooltip();
-                                    audio_play();
-                                    return false;
-                                }
-        						
-        						                                if (event.keyCode === 65 && event.ctrlKey) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if (event.keyCode === 67 && event.ctrlKey && !event.shiftKey) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 86 && event.ctrlKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 88 && event.ctrlKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 85 && event.ctrlKey)) {
-                                    show_tooltip( );
-                                    audio_play();
-                                    return false;
-                                }
-        						
-        						
-        						
-                                
-                                
-                                                                
-
-                                
-                                
-                                
-                                
-                                
-        						                                if (event.keyCode === 123 || (event.keyCode === 123 && event.shiftKey)) {
-                                    show_tooltip();
-                                    audio_play();
-                                    return false;
-                                }
-        						                            } else if (BrowserDetect.OS === 'Mac') {
-        						                                if (isChrome || isSafari || isOpera || isFirefox) {
-                                    if (event.metaKey && (
-                                        event.keyCode === 73 ||
-                                        event.keyCode === 74 ||
-                                        event.keyCode === 69 ||
-                                        event.keyCode === 75)) {
-                                        show_tooltip();
-                                        audio_play();
-                                        return false;
-                                    }
-                                }
-        						
-        						                                if ((event.keyCode === 83 && event.metaKey)) {
-                                    show_tooltip();
-                                    audio_play();
-                                    return false;
-                                }
-        						
-        						                                if ((event.keyCode === 65 && event.metaKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 67 && event.metaKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 86 && event.metaKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 88 && event.metaKey)) {
-                                                                            show_tooltip();
-                                        audio_play();
-                                        return false;
-                                                                    }
-        						
-        						                                if ((event.keyCode === 85 && event.metaKey)) {
-                                    show_tooltip( );
-                                    audio_play();
-                                    return false;
-                                }
-        						
-        						
-        						
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-        						                                if (event.keyCode === 123) {
-                                    show_tooltip();
-                                    audio_play();
-                                    return false;
-                                }
-        						                            }
-                        }
-                    });
-
-                    function disableSelection(e) {
-                        if (typeof e.onselectstart !== "undefined")
-                            e.onselectstart = function () {
-                                show_tooltip( );
-                                audio_play();
-                                return false
-                            };
-                        else if (typeof e.style.MozUserSelect !== "undefined")
-                            e.style.MozUserSelect = "none";
-                        else e.onmousedown = function () {
-                                show_tooltip();
-                                audio_play();
-                                return false
-                            };
-                        e.style.cursor = "default"
-                    }
-
-                    var msg_count = 1; 
-                    function show_tooltip(mess) {
-                        if (mess && msg_count == 1) {
-                            if (tooltipClass == 'mouse_first_pos') {
-                                if ($('#ays_tooltip2').length > 0) {
-                                    $('#ays_tooltip2').remove();
-                                }
-                                var tooltip2 = tooltip.clone().prop('id','ays_tooltip2').insertBefore(tooltip);
-                                $('#ays_tooltip2').addClass('ays_tooltip_class');
-                                tooltip2.css({'display': 'table'});
-                                $('#ays_tooltip').fadeOut();
-                                setTimeout(function () {
-                                    tooltip2.remove();
-                                }, 1000);
-                            }else{
-                                tooltip.css({'display': 'table'});
-                                setTimeout(function () {
-                                    $('#ays_tooltip').fadeOut(500);
-                                }, 1000);
-                            }
-                        }
-
-                                            }
-
-                    function audio_play(audio) {
-                        if (audio) {
-                            var audio = document.getElementById("sccp_public_audio");
-                            if (audio) {
-                                audio.currentTime = 0;
-                                audio.play();
-                            }
-
-                        }
-                    }
-
-
-                });
-            })(jQuery);
-            var copyrightText = '';
-            var copyrightIncludeUrl = '';
-            var copyrightWord = '';
-                        
-            var BrowserDetect = {
-                init: function () {
-                    this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
-                    this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version";
-                    this.OS = this.searchString(this.dataOS) || "an unknown OS";
-                },
-                searchString: function (data) {
-                    for (var i = 0; i < data.length; i++) {
-                        var dataString = data[i].string;
-                        var dataProp = data[i].prop;
-                        this.versionSearchString = data[i].versionSearch || data[i].identity;
-                        if (dataString) {
-                            if (dataString.indexOf(data[i].subString) !== -1) return data[i].identity;
-                        } else if (dataProp) return data[i].identity;
-                    }
-                },
-                searchVersion: function (dataString) {
-                    var index = dataString.indexOf(this.versionSearchString);
-                    if (index === -1) return;
-                    return parseFloat(dataString.substring(index + this.versionSearchString.length + 1));
-                },
-                dataBrowser: [{
-                    string: navigator.userAgent,
-                    subString: "Chrome",
-                    identity: "Chrome"
-                }, {
-                    string: navigator.userAgent,
-                    subString: "OmniWeb",
-                    versionSearch: "OmniWeb/",
-                    identity: "OmniWeb"
-                }, {
-                    string: navigator.vendor,
-                    subString: "Apple",
-                    identity: "Safari",
-                    versionSearch: "Version"
-                }, {
-                    prop: window.opera,
-                    identity: "Opera",
-                    versionSearch: "Version"
-                }, {
-                    string: navigator.vendor,
-                    subString: "iCab",
-                    identity: "iCab"
-                }, {
-                    string: navigator.vendor,
-                    subString: "KDE",
-                    identity: "Konqueror"
-                }, {
-                    string: navigator.userAgent,
-                    subString: "Firefox",
-                    identity: "Firefox"
-                }, {
-                    string: navigator.vendor,
-                    subString: "Camino",
-                    identity: "Camino"
-                }, { // for newer Netscapes (6+)
-                    string: navigator.userAgent,
-                    subString: "Netscape",
-                    identity: "Netscape"
-                }, {
-                    string: navigator.userAgent,
-                    subString: "MSIE",
-                    identity: "Explorer",
-                    versionSearch: "MSIE"
-                }, {
-                    string: navigator.userAgent,
-                    subString: "Gecko",
-                    identity: "Mozilla",
-                    versionSearch: "rv"
-                }, { // for older Netscapes (4-)
-                    string: navigator.userAgent,
-                    subString: "Mozilla",
-                    identity: "Netscape",
-                    versionSearch: "Mozilla"
-                }],
-                dataOS: [{
-                    string: navigator.platform,
-                    subString: "Win",
-                    identity: "Windows"
-                }, {
-                    string: navigator.platform,
-                    subString: "Mac",
-                    identity: "Mac"
-                }, {
-                    string: navigator.userAgent,
-                    subString: "iPhone",
-                    identity: "iPhone/iPod"
-                }, {
-                    string: navigator.platform,
-                    subString: "Linux",
-                    identity: "Linux"
-                }]
-            };
-            BrowserDetect.init();
-        // }, false);
-    </script>
-<script>(function() {function maybePrefixUrlField() {
-	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
-		this.value = "http://" + this.value;
-	}
-}
-
-var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
-if (urlFields) {
-	for (var j=0; j < urlFields.length; j++) {
-		urlFields[j].addEventListener('blur', maybePrefixUrlField);
-	}
-}
-})();</script>		
-	<script type="text/html" id="wpb-modifications"></script><link href="https://fonts.googleapis.com/css?family=Roboto:400%7CNunito+Sans:900%2C400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
-
-	<script type="text/javascript">
-		(function () {
-			var c = document.body.className;
-			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-			document.body.className = c;
-		})();
-	</script>
-			<script type="text/javascript">
-		if(typeof revslider_showDoubleJqueryError === "undefined") {
-			function revslider_showDoubleJqueryError(sliderID) {
-				var err = "<div class='rs_error_message_box'>";
-				err += "<div class='rs_error_message_oops'>Oops...</div>";
-				err += "<div class='rs_error_message_content'>";
-				err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
-				err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
-				err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
-				err += "</div>";
-			err += "</div>";
-				var slider = document.getElementById(sliderID); slider.innerHTML = err; slider.style.display = "block";
-			}
-		}
-		</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
-<script type="text/javascript" id="wp-polyfill-js-after">
-( 'fetch' in window ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://www.yodawy.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
-</script>
-<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-var wpcf7 = {"api":{"root":"https:\/\/www.yodawy.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6" id="contact-form-7-js"></script>
-<script type="text/javascript" id="ts-shortcode-js-extra">
-/* <![CDATA[ */
-var ts_shortcode_params = {"ajax_uri":"\/wp-admin\/admin-ajax.php?lang=en"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/themesky/js/shortcode.js?ver=1.1.0" id="ts-shortcode-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/themesky/js/owl.carousel.min.js?ver=1.1.0" id="owl-carousel-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.3.1" id="js-cookie-js"></script>
-<script type="text/javascript" id="woocommerce-js-extra">
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.3.1" id="woocommerce-js"></script>
-<script type="text/javascript" id="wc-cart-fragments-js-extra">
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_c5a88b1c331171ae9f596b88a53a3d3e-en","fragment_name":"wc_fragments_c5a88b1c331171ae9f596b88a53a3d3e","request_timeout":"5000"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.3.1" id="wc-cart-fragments-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/woocommerce-multilingual/res/js/front-scripts.min.js?ver=4.11.6" id="wcml-front-scripts-js"></script>
-<script type="text/javascript" id="cart-widget-js-extra">
-/* <![CDATA[ */
-var actions = {"is_lang_switched":"0","force_reset":"0"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/woocommerce-multilingual/res/js/cart_widget.min.js?ver=4.11.6" id="cart-widget-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/wpcf7-recaptcha/assets/js/wpcf7-recaptcha-controls.js?ver=1.2" id="wpcf7-recaptcha-controls-js"></script>
-<script type="text/javascript" id="google-recaptcha-js-extra">
-/* <![CDATA[ */
-var wpcf7iqfix = {"recaptcha_empty":"Please verify that you are not a robot.","response_err":"wpcf7-recaptcha: Could not verify reCaptcha response."};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en_US&amp;onload=recaptchaCallback&amp;render=explicit&amp;ver=2.0" id="google-recaptcha-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/themes/mymedi/js/jquery.throttle-debounce.min.js?ver=1.1.0" id="jquery-throttle-debounce-js"></script>
-<script type="text/javascript" id="mymedi-script-js-extra">
-/* <![CDATA[ */
-var mymedi_params = {"ajax_url":"\/wp-admin\/admin-ajax.php?lang=en","sticky_header":"1","responsive":"1","ajax_search":"0","show_cart_after_adding":"0","ajax_add_to_cart":"1","add_to_cart_effect":"","shop_loading_type":"ajax-pagination","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_options":[],"product_name_min_height":"1"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/themes/mymedi/js/main.js?ver=1.1.0" id="mymedi-script-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/themes/mymedi/js/jquery.sticky.js?ver=1.1.0" id="jquery-sticky-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-includes/js/wp-embed.min.js?ver=5.7.6" id="wp-embed-js"></script>
-<script type="text/javascript" src="https://www.yodawy.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.4.2" id="wpb_composer_front_js-js"></script>
-<script type="text/javascript" defer="" src="https://www.yodawy.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.7" id="mc4wp-forms-api-js"></script>
+	</div>
 
 </body>
 </html>

@@ -106,6 +106,10 @@
             text-align: left;
             width: 138px;
         }
+        .auto-style17 {
+            height: 26px;
+            text-align: left;
+        }
         </style>
 </head>
 <body>
@@ -252,7 +256,7 @@
                         <input onchange="document.getElementById('passtxt').type=this.checked ? 'text' : 'password'" type="checkbox" />
                         <asp:Label ID="Label22" runat="server" Font-Names="Bell MT" Font-Size="Small" Text="Show Password"></asp:Label>
                     </td>
-                    <td class="auto-style14">
+                    <td class="auto-style17">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="passtxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
@@ -263,21 +267,22 @@
                     <td class="auto-style12">
                         <asp:TextBox ID="passtxt1" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
-                    <td class="auto-style13"></td>
-                    <td class="auto-style14">
-                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="passtxt1" ControlToValidate="txtRetypePass" ErrorMessage="No Matching, Retype !!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:CompareValidator>
+                    <td class="auto-style13">
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="passtxt" ControlToValidate="passtxt1" ErrorMessage="No Matching, Retype !!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:CompareValidator>
                     </td>
+                    <td class="auto-style14">
+                        &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style11">
                         <asp:Label ID="Label24" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Profile Photo:"></asp:Label>
                         <asp:Label ID="Label25" runat="server" Font-Names="Bell MT" Font-Size="Small" Text="(Optional)"></asp:Label>
                     </td>
-                    <td class="auto-style9">
+                    <td class="auto-style12">
                         <asp:FileUpload ID="FileUpload1" runat="server" />
                     </td>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style13"></td>
+                    <td class="auto-style14"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>

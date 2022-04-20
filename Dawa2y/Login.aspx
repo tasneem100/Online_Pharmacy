@@ -26,11 +26,12 @@
         .auto-style8 {
             text-align: left;
             height: 30px;
-            width: 103px;
+            width: 87px;
         }
         .auto-style3 {
             text-align: left;
             height: 30px;
+            width: 132px;
         }
         .auto-style13 {
             text-align: right;
@@ -38,15 +39,30 @@
             height: 37px;
         }
         .auto-style11 {
-            width: 103px;
+            width: 87px;
             height: 37px;
         }
         .auto-style12 {
             height: 37px;
+            width: 132px;
         }
         .auto-style14 {
             text-align: center;
             height: 58px;
+        }
+        .auto-style18 {
+            text-align: left;
+            height: 30px;
+            width: 46px;
+        }
+        .auto-style19 {
+            height: 37px;
+            width: 46px;
+        }
+        .auto-style20 {
+            text-align: center;
+            height: 58px;
+            width: 46px;
         }
         </style>
 </head>
@@ -55,7 +71,7 @@
         <div class="auto-style16">
             <table cellpadding="3" class="auto-style1">
                 <tr>
-                    <td class="auto-style6" colspan="3">
+                    <td class="auto-style6" colspan="4">
                         <asp:Label ID="Label10" runat="server" Font-Names="Agency FB" Font-Size="Large" Text="Login Page"></asp:Label>
                     </td>
                 </tr>
@@ -66,7 +82,11 @@
                     <td class="auto-style8">
                         <asp:TextBox ID="loginnametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style3"></td>
+                    <td class="auto-style3">
+
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="loginnametxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style18"></td>
                 </tr>
                 <tr>
                     <td class="auto-style13">
@@ -77,7 +97,11 @@
                     </td>
                     <td class="auto-style12">
                         <input onchange="document.getElementById('loginpasstxt').type=this.checked ? 'text' : 'password'" type="checkbox" /><asp:Label ID="Label22" runat="server" Font-Names="Bell MT" Font-Size="Small" Text="Show Password"></asp:Label>
+
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="loginpasstxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                     </td>
+                    <td class="auto-style19">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style13">&nbsp;</td>
@@ -85,9 +109,11 @@
                         <asp:Button ID="BTNLogin0" runat="server" CssClass="auto-style15" Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" Height="27px" Text="Login" Width="113px" />
                     </td>
                     <td class="auto-style12">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style14" colspan="3">&nbsp;</td>
+                    <td class="auto-style20">&nbsp;</td>
                 </tr>
             </table>
         </div>
