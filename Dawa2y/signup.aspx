@@ -22,7 +22,7 @@
             text-align: left;
         }
         .auto-style9 {
-            width: 129px;
+            width: 116px;
             text-align: left;
         }
         .auto-style8 {
@@ -35,12 +35,13 @@
         }
         .auto-style6 {
             height: 23px;
-            width: 129px;
+            width: 116px;
             text-align: left;
         }
         .auto-style10 {
             height: 23px;
             text-align: left;
+            width: 138px;
         }
         .auto-style2 {
             height: 23px;
@@ -51,16 +52,21 @@
             height: 26px;
         }
         .auto-style12 {
-            width: 129px;
+            width: 116px;
             text-align: left;
             height: 26px;
         }
         .auto-style13 {
             text-align: left;
             height: 26px;
+            width: 138px;
         }
         .auto-style14 {
             height: 26px;
+        }
+        .auto-style16 {
+            text-align: left;
+            width: 138px;
         }
         </style>
 </head>
@@ -82,7 +88,9 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="Fnametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Fnametxt" ErrorMessage="This is required field!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style8">&nbsp;</td>
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
@@ -93,7 +101,7 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="Lnametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
                 <tr>
@@ -103,7 +111,7 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="Unametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
                 <tr>
@@ -123,7 +131,7 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="phonetxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -134,7 +142,7 @@
                         <asp:RadioButton ID="Female" runat="server" Text="Female" />
                         <asp:RadioButton ID="genderM" runat="server" Text="Male" />
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -153,7 +161,7 @@
                             <WeekendDayStyle BackColor="#FFFFCC" />
                         </asp:Calendar>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -163,7 +171,7 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="addresstxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -207,7 +215,7 @@
                     <td class="auto-style9">
                         <asp:FileUpload ID="FileUpload1" runat="server" />
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -215,7 +223,7 @@
                     <td class="auto-style9">
                         <asp:Button ID="BTNsubmit" runat="server" Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" Text="Submit" />
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
