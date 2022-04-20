@@ -13,5 +13,10 @@ namespace Dawa2y
         {
 
         }
+
+        protected void BTNsubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

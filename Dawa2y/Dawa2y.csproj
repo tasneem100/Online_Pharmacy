@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.aspx" />
+    <Content Include="App_Data\onlinepharm.mdf" />
+    <Content Include="App_Data\onlinepharm_log.ldf">
+      <DependentUpon>onlinepharm.mdf</DependentUpon>
+    </Content>
     <Content Include="Footer.htm" />
     <Content Include="home.html" />
     <Content Include="homepage.aspx" />

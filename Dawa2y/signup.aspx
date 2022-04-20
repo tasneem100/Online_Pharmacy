@@ -1,7 +1,44 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="Dawa2y.signup" %>
-
+﻿<%@ Page Language="C#" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html>
+<script runat="server">
 
+    protected void BTNsubmit_Click(object sender, EventArgs e)
+    {
+        lblmsg.Text = "function has been executed";
+        //create sql object
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString ="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|onlinepharm.mdf;Integrated Security = True";
+
+        string strinsurt = String.Format("INSERT INTO Customer VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Fnametxt.Text, Lnametxt.Text, Unametxt.Text, Emailtxt.Text, phonetxt.Text, RadioButtonList1.SelectedValue,addresstxt.Text, insurancetxt.Text, passtxt.Text);
+        //string strinsurt = "INSERT INTO Customer" +
+         //   "VALUES(" + Fnametxt.Text + ","
+         //   + Lnametxt.Text + "," + Unametxt.Text + "," + Emailtxt.Text + "," + phonetxt.Text
+          //  + "," + RadioButtonList1.SelectedValue + ","  + "," + insurancetxt.Text +
+          //  "." + passtxt.Text +")";
+
+        SqlCommand cmdInsert = new SqlCommand(strinsurt, conn);
+        try
+        {
+            conn.Open();
+            cmdInsert.ExecuteNonQuery();
+
+            conn.Close();
+            lblmsg.Text = "connection worked!";
+        }
+        catch (SqlException err)
+        {
+            if (err.Number == 2627)
+                lblmsg.Text = "The Username " + Unametxt.Text + " already used, Please choose another !!";
+            else
+                lblmsg.Text = "Database error, Please try later !!";
+        }
+        catch
+        {
+            lblmsg.Text = "The system is not available at the moment, you may try later !!";
+        }
+    }
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -45,6 +82,7 @@
         }
         .auto-style2 {
             height: 23px;
+            text-align: left;
         }
         .auto-style11 {
             width: 193px;
@@ -89,9 +127,12 @@
                         <asp:TextBox ID="Fnametxt" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style16">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Fnametxt" ErrorMessage="This is required field!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Fnametxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style8">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Fnametxt" ErrorMessage="Invalid First Name Format!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="([A-Z][a-z]*\s[A-Z][a-z]*)|([A-Z][a-z]*)"></asp:RegularExpressionValidator>
+                    </td>
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
                 <tr>
@@ -101,8 +142,12 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="Lnametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Lnametxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Lnametxt" ErrorMessage="Invalid Last Name Format!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="([A-Z][a-z]*\s[A-Z][a-z]*)|([A-Z][a-z]*)"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
@@ -111,8 +156,12 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="Unametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style16">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style16">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Unametxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="Unametxt" ErrorMessage="Should be 8 characters at least!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style4">
@@ -121,8 +170,12 @@
                     <td class="auto-style6">
                         <asp:TextBox ID="Emailtxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style10">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="Emailtxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Emailtxt" ErrorMessage="Invalid Email Address!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
@@ -131,7 +184,9 @@
                     <td class="auto-style9">
                         <asp:TextBox ID="phonetxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style16">&nbsp;</td>
+                    <td class="auto-style16">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="phonetxt" ErrorMessage="Invalid Mobile Number Number !!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="[0][1][0-2][0-24-9]\s\d{7}"></asp:RegularExpressionValidator>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -139,8 +194,10 @@
                         <asp:Label ID="Label14" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Gender:"></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <asp:RadioButton ID="Female" runat="server" Text="Female" />
-                        <asp:RadioButton ID="genderM" runat="server" Text="Male" />
+                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" Width="135px">
+                            <asp:ListItem Value="F">Female</asp:ListItem>
+                            <asp:ListItem Value="M">Male</asp:ListItem>
+                        </asp:RadioButtonList>
                     </td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
@@ -195,7 +252,9 @@
                         <input onchange="document.getElementById('passtxt').type=this.checked ? 'text' : 'password'" type="checkbox" />
                         <asp:Label ID="Label22" runat="server" Font-Names="Bell MT" Font-Size="Small" Text="Show Password"></asp:Label>
                     </td>
-                    <td class="auto-style14"></td>
+                    <td class="auto-style14">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="passtxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style11">
@@ -205,7 +264,9 @@
                         <asp:TextBox ID="passtxt1" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style13"></td>
-                    <td class="auto-style14"></td>
+                    <td class="auto-style14">
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="passtxt1" ControlToValidate="txtRetypePass" ErrorMessage="No Matching, Retype !!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:CompareValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
@@ -221,10 +282,18 @@
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style9">
-                        <asp:Button ID="BTNsubmit" runat="server" Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" Text="Submit" />
+                        <asp:Button ID="BTNsubmit" runat="server" Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" Text="Submit" OnClick="BTNsubmit_Click" />
                     </td>
                     <td class="auto-style16">&nbsp;</td>
                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" colspan="4">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" colspan="4">
+                        <asp:Label ID="lblmsg" runat="server" Font-Names="Bell MT" Font-Size="Medium"></asp:Label>
+                    </td>
                 </tr>
             </table>
         </div>
