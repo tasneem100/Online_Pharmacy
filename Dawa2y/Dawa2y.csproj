@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Footer.htm" />
+    <Content Include="home.html" />
+    <Content Include="Index.html" />
     <Content Include="HomePage.aspx" />
     <Content Include="images\medical-pharmacy-logo.jpg" />
     <Content Include="signup.aspx" />

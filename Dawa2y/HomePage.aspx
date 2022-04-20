@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Dawa2y.HomePage" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Dawa2y.HomePage" %>
 
 <!DOCTYPE html>
 
@@ -40,14 +41,14 @@
                 <td class="auto-style4">
                     <img alt="Logo" class="auto-style1" src="images/medical-pharmacy-logo.jpg" /></td>
                 <td class="auto-style5" >
-                    <asp:Menu ID="Menu1" runat="server"  StaticMenuStyle-BackColor="#339966" BorderStyle="None" Font-Names="Agency FB" Font-Size="Larger" ForeColor="White"  OnMenuItemClick="Menu1_MenuItemClick1" Orientation="Horizontal" BackColor="White" Height="100px">
+                    <asp:Menu ID="Menu1" runat="server"  StaticMenuStyle-BackColor="#339966" BorderStyle="None" Font-Names="Agency FB" Font-Size="Larger" ForeColor="White"  OnMenuItemClick="Menu1_MenuItemClick1" Orientation="Horizontal" BackColor="#339966" Height="100px">
                         <DynamicItemTemplate>
                             <%# Eval("Text") %>
                         </DynamicItemTemplate>
                         <Items>
                             <asp:MenuItem Text="Home" Value="Home" ></asp:MenuItem>
                             <asp:MenuItem Text="Login" Value="Login"></asp:MenuItem>
-                            <asp:MenuItem Text="Signup" Value="Signup"></asp:MenuItem>
+                            <asp:MenuItem Text="Signup" Value="Signup" NavigateUrl="~/signup.aspx" Target="_blank"></asp:MenuItem>
                             <asp:MenuItem Text="Categories" Value="Categories"></asp:MenuItem>
                             <asp:MenuItem Text="Contact" Value="Contact"></asp:MenuItem>
                             <asp:MenuItem Text="Store Locator" Value="Store Locator"></asp:MenuItem>

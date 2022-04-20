@@ -67,6 +67,8 @@
 <body>
     <form id="form1" runat="server">
         <div class="auto-style7">
+            <div class="auto-style8">
+            </div>
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style15" colspan="5">
