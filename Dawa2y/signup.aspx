@@ -11,11 +11,6 @@
         conn.ConnectionString ="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|onlinepharm.mdf;Integrated Security = True";
 
         string strinsurt = String.Format("INSERT INTO Customer VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Fnametxt.Text, Lnametxt.Text, Unametxt.Text, Emailtxt.Text, phonetxt.Text, RadioButtonList1.SelectedValue,addresstxt.Text, insurancetxt.Text, passtxt.Text);
-        //string strinsurt = "INSERT INTO Customer" +
-         //   "VALUES(" + Fnametxt.Text + ","
-         //   + Lnametxt.Text + "," + Unametxt.Text + "," + Emailtxt.Text + "," + phonetxt.Text
-          //  + "," + RadioButtonList1.SelectedValue + ","  + "," + insurancetxt.Text +
-          //  "." + passtxt.Text +")";
 
         SqlCommand cmdInsert = new SqlCommand(strinsurt, conn);
         try
@@ -110,6 +105,24 @@
             height: 26px;
             text-align: left;
         }
+        .auto-style18 {
+            width: 193px;
+            text-align: left;
+            height: 36px;
+        }
+        .auto-style19 {
+            width: 116px;
+            text-align: left;
+            height: 36px;
+        }
+        .auto-style20 {
+            text-align: left;
+            width: 138px;
+            height: 36px;
+        }
+        .auto-style21 {
+            height: 36px;
+        }
         </style>
 </head>
 <body>
@@ -182,16 +195,16 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">
+                    <td class="auto-style18">
                         <asp:Label ID="Label15" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Phone Number:"></asp:Label>
                     </td>
-                    <td class="auto-style9">
+                    <td class="auto-style19">
                         <asp:TextBox ID="phonetxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style16">
+                    <td class="auto-style20">
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="phonetxt" ErrorMessage="Invalid Mobile Number Number !!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000" ValidationExpression="[0][1][0-2][0-24-9]\s\d{7}"></asp:RegularExpressionValidator>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style21"></td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
@@ -211,18 +224,12 @@
                         <asp:Label ID="Label16" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="BirthDate:"></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px">
-                            <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
-                            <NextPrevStyle VerticalAlign="Bottom" />
-                            <OtherMonthDayStyle ForeColor="#808080" />
-                            <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
-                            <SelectorStyle BackColor="#CCCCCC" />
-                            <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
-                            <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
-                            <WeekendDayStyle BackColor="#FFFFCC" />
-                        </asp:Calendar>
+                        <asp:TextBox ID="Birthtxt" runat="server" TextMode="Date"></asp:TextBox>
                     </td>
-                    <td class="auto-style16">&nbsp;</td>
+                    <td class="auto-style16">
+
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Birthtxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
