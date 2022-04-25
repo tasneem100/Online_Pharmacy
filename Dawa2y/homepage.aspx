@@ -75,27 +75,6 @@
 					<div class="header-left hidden-ipad">
 						Need help? <strong>15005 </strong>
 					</div>
-					<div class="header-right">
-						
-<div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-touch-device wpml-ls-legacy-list-horizontal">
-	<ul><li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-ar wpml-ls-first-item wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
-				<a href="https://www.yodawy.com/ar/" class="wpml-ls-link"><span class="wpml-ls-native" lang="ar">العربية</span></a>
-			</li></ul>
-</div>
-						<div class="ts-header-social-icons">
-							<ul>
-								<li class="facebook">
-									<a href="https://www.facebook.com/yodawyapp/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-								</li>
-								<li class="instagram">
-									<a href="https://www.instagram.com/yodawyapp/" target="_blank"><i class="fab fa-instagram"></i></a>
-								</li>
-								<li class="linkedin">
-									<a href="https://www.linkedin.com/company/yodawyapp/mycompany/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 			
@@ -120,157 +99,19 @@
 			<input type="submit" id="searchsubmit-557" value="Search">
 		</div>
 	</div>
-</form>							<div class="ts-search-result-container"></div>
+</form>							
 						</div>
 					</div>
 				</div>
+                <header class="ts-header has-sticky hidden-cart hidden-wishlist">
+	                <div class="header-container">
+		                <div class="header-template">
 		
-				
-		<!-- Mobile Menu -->
-		<div id="group-icon-header" class="ts-floating-sidebar mobile-menu-wrapper hidden ">
-		
-					
-			<div class="ts-sidebar-content">
-				
-				<div class="ts-menu">
-					<div class="menu-main-mobile">
-						<nav class="mobile-menu"><ul id="menu-main-menu" class="menu"><li id="menu-item-38089" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38089 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/baby/"><span class="menu-label" data-hover="Baby">Baby</span></a></li>
-<li id="menu-item-38090" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38090 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/bath-body/"><span class="menu-label" data-hover="Bath &amp; Body">Bath &amp; Body</span></a></li>
-<li id="menu-item-38091" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38091 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/beauty/"><span class="menu-label" data-hover="Beauty">Beauty</span></a></li>
-<li id="menu-item-38092" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38092 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/contact-lenses/"><span class="menu-label" data-hover="Contact Lenses">Contact Lenses</span></a></li>
-<li id="menu-item-38093" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38093 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/dermocosmetics/"><span class="menu-label" data-hover="Dermocosmetics">Dermocosmetics</span></a></li>
-<li id="menu-item-38094" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38094 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/hair-care/"><span class="menu-label" data-hover="Hair Care">Hair Care</span></a></li>
-<li id="menu-item-38095" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38095 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/men-care/"><span class="menu-label" data-hover="Men Care">Men Care</span></a></li>
-<li id="menu-item-38096" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38096 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/oral-care/"><span class="menu-label" data-hover="Oral Care">Oral Care</span></a></li>
-<li id="menu-item-38097" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38097 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/personal-care/"><span class="menu-label" data-hover="Personal Care">Personal Care</span></a></li>
-<li id="menu-item-38098" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38098 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/sexual-wellness/"><span class="menu-label" data-hover="Sexual Wellness">Sexual Wellness</span></a></li>
-<li id="menu-item-38099" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-38099 ts-normal-menu">
-	<a href="https://www.yodawy.com/shop/women-care/"><span class="menu-label" data-hover="Women Care">Women Care</span></a></li>
-</ul></nav>					</div>
-				</div>
-				
-				<div class="group-button-header">
-				
-					
-					<nav class="top-header-menu"><ul id="menu-top-header-navigation" class="menu"><li id="menu-item-49403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49403"><a href="https://www.yodawy.com/shop/">Shop</a></li>
-<li id="menu-item-54938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54938"><a href="https://www.yodawy.com/for-pharmacies/">For Pharmacies</a></li>
-<li id="menu-item-54944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54944"><a href="https://www.yodawy.com/for-insurers/">For Insurers</a></li>
-<li id="menu-item-54947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54947"><a href="https://www.yodawy.com/for-doctors/">For Doctors</a></li>
-<li id="menu-item-54933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54933"><a href="https://www.yodawy.com/about-us/">About Us</a></li>
-<li id="menu-item-55210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55210"><a href="https://www.yodawy.com/blog/">Blog</a></li>
-<li id="menu-item-17566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17566"><a href="https://www.yodawy.com/contact/">Contact</a></li>
-</ul></nav>					
-										
-										<div class="delivery-message"></div>
-										
-										
-				</div>
-				
-			</div>
+			                <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 155px;">
+                                <div class="header-sticky" style="">
+				                    <div class="header-middle has-icon-menu-sticky-header">
+					                    <div class="container">
 
-		</div>
-		
-		<!-- Group Icons Bottom -->
-					
-			<div id="ts-group-icons-header" class="ts-group-icons-header visible-phone">
-				
-				<!-- Menu Icon -->
-				<div class="ts-group-meta-icon-toggle">
-					<span class="ic-mobile-menu-button">
-						<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M33.0652 17H12.6124C12.2449 17 12 16.8947 12 16.7368V15.2632C12 15.1053 12.2449 15 12.6124 15H33.1876C33.5551 15 33.8 15.1053 33.8 15.2632V16.7368C33.6775 16.8947 33.4326 17 33.0652 17Z" fill="#FF9923"></path>
-						<path d="M33.0652 24H12.6124C12.2449 24 12 23.8947 12 23.7368V22.2632C12 22.1053 12.2449 22 12.6124 22H33.1876C33.5551 22 33.8 22.1053 33.8 22.2632V23.7368C33.6775 23.8421 33.4326 24 33.0652 24Z" fill="#FF9923"></path>
-						<path d="M33.0652 31H12.6124C12.2449 31 12 30.8947 12 30.7368V29.2632C12 29.1053 12.2449 29 12.6124 29H33.1876C33.5551 29 33.8 29.1053 33.8 29.2632V30.7368C33.6775 30.8947 33.4326 31 33.0652 31Z" fill="#FF9923"></path>
-						</svg>
-					</span>
-					<span class="ic-mobile-menu-close-button">
-						<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M29.7546 31.1689L15.2923 16.7066C15.0325 16.4468 14.9337 16.1991 15.0454 16.0875L16.0874 15.0454C16.1991 14.9338 16.4467 15.0326 16.7065 15.2924L31.2554 29.8413C31.5152 30.1011 31.614 30.3487 31.5024 30.4604L30.4603 31.5024C30.2993 31.4902 30.0144 31.4287 29.7546 31.1689Z" fill="#103178"></path>
-						<path d="M16.7934 31.1689L31.2557 16.7066C31.5155 16.4468 31.6143 16.1991 31.5026 16.0875L30.4606 15.0454C30.3489 14.9338 30.1013 15.0326 29.8415 15.2924L15.2926 29.8413C15.0328 30.1011 14.934 30.3487 15.0456 30.4604L16.0877 31.5024C16.2487 31.4902 16.5336 31.4287 16.7934 31.1689Z" fill="#103178"></path>
-						</svg>
-					</span>
-				</div>
-				
-				<!-- Home Icon -->
-				<div class="home-icon">
-					<a href="https://www.yodawy.com/">
-						<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M31 21V32H16V21" stroke="#FF9923" stroke-width="2" stroke-miterlimit="10"></path>
-						<path d="M34 23L23.5 14L13 23" stroke="#FF9923" stroke-width="2" stroke-miterlimit="10"></path>
-						</svg>
-					</a>
-				</div>
-				
-				<!-- Myaccount Icon -->
-								
-				<!-- Wishlist Icon -->
-								
-				<!-- Cart Icon -->
-									
-			</div>
-		
-				
-		<!-- Shopping Cart Floating Sidebar -->
-				
-		<header class="ts-header has-sticky hidden-cart hidden-wishlist">
-	<div class="header-container">
-		<div class="header-template">
-		
-			<div class="header-top">
-				<div class="container-menu">
-					<div class="menu-top">
-						
-												
-												
-												
-						<nav class="top-header-menu"><ul id="menu-top-header-navigation-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49403"><a href="https://www.yodawy.com/shop/">Shop</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54938"><a href="https://www.yodawy.com/for-pharmacies/">For Pharmacies</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54944"><a href="https://www.yodawy.com/for-insurers/">For Insurers</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54947"><a href="https://www.yodawy.com/for-doctors/">For Doctors</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54933"><a href="https://www.yodawy.com/about-us/">About Us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55210"><a href="https://www.yodawy.com/blog/">Blog</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17566"><a href="https://www.yodawy.com/contact/">Contact</a></li>
-</ul></nav>					</div>
-				</div>
-			</div>
-		
-			<div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 155px;"><div class="header-sticky" style="">
-				<div class="header-middle has-icon-menu-sticky-header">
-					<div class="container">
-
-						<div class="logo-wrapper">		
-		</div>
-						
-						<span class="icon-menu-sticky-header hidden-phone">
-							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M31.2 18.8H14.5C14.2 18.8 14 18.6 14 18.3V15.5C14 15.2 14.2 15 14.5 15H31.3C31.6 15 31.8 15.2 31.8 15.5V18.3C31.7 18.6 31.5 18.8 31.2 18.8Z" fill="#103178"></path>
-							<path d="M31.2 24.8H14.5C14.2 24.8 14 24.6 14 24.3V21.5C14 21.2 14.2 21 14.5 21H31.3C31.6 21 31.8 21.2 31.8 21.5V24.3C31.7 24.5 31.5 24.8 31.2 24.8Z" fill="#103178"></path>
-							<path d="M31.2 30.7H14.5C14.2 30.7 14 30.5 14 30.2V27.4C14 27.1 14.2 26.9 14.5 26.9H31.3C31.6 26.9 31.8 27.1 31.8 27.4V30.2C31.7 30.5 31.5 30.7 31.2 30.7Z" fill="#103178"></path>
-							</svg>
-						</span>
-						
-												<div class="ts-search-by-category hidden-ipad"><form method="get" action="https://www.yodawy.com/" id="searchform-734">
-	<div class="search-table">
-		<div class="search-field search-content">
-			<input type="text" value="" name="s" id="s-734" placeholder="Search for products" autocomplete="off">
-						<input type="hidden" name="post_type" value="product">
-					</div>
-		<div class="search-button">
-			<input type="submit" id="searchsubmit-734" value="Search">
-		</div>
-	</div>
-</form></div>
-												
 						<div class="header-right">
 							
 														
@@ -342,11 +183,7 @@
 	<div id="main-content" class="ts-col-24">	
 		<div id="primary" class="site-content">
 					<article id="post-15957" class="post-15957 page type-page status-publish hentry">
-				<div class="vc_row wpb_row vc_row-fluid white-line vc_custom_1603699068582 vc_column-gap-default ts-row-wide vc_row-no-padding" data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" style="position: relative; left: -20px; box-sizing: border-box; width: 794px;"><div class="wpb_column vc_column_container vc_col-sm-12">
-	<div class="wpb_wrapper">
-	<div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text"><span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#ffffff;" class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#ffffff;" class="vc_sep_line"></span></span>
-</div>	</div>
-</div></div>	<div class="vc_row wpb_row vc_row-fluid overflow-hidden mobile-row-alignfull vc_custom_1602668300374 ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_row wpb_row vc_row-fluid overflow-hidden mobile-row-alignfull vc_custom_1602668300374 ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12">
 </div></div>	<div class="vc_row wpb_row vc_row-fluid vc_custom_1596532253415 vc_column-gap-default ts-row-wide"><div class="wpb_column vc_column_container vc_col-sm-12">
 	<div class="wpb_wrapper">
 	<h1 style="text-align: center" class="vc_custom_heading">Categories</h1><div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-default"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">	<div class="ts-banner ts-effect-image style-default eff-image-opacity banner-radius center-bottom ts-banner-1  has-background-image">
@@ -976,16 +813,6 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-controls">
-                <div class="owl-nav">
-                    <div class="owl-prev" style="">
-                    </div>
-                    <div class="owl-next" style="">
-                    </div>
-                </div>
-                <div class="owl-dots" style="display: none;">
-                </div>
-            </div>
         </div>
     </div>
     </div>
@@ -1021,15 +848,12 @@
                         <div class="subscribe-email">
                             <input type="email" name="EMAIL" placeholder="Enter your email address" required="">
                             <button class="button button-primary" type="submit">
-                                Subscribe
-                            </button>
+                                Subscribe</button>
                         </div>
                     </div>
                     <label style="display: none !important;">
                     Leave this field empty if you're human: 
-                    <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1650415986"><input type="hidden" name="_mc4wp_form_id" value="7041"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response">
-                    </div>
-                </form>
+                    <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1650415986"><input type="hidden" name="_mc4wp_form_id" value="7041"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"></form>
                 <!-- / Mailchimp for WordPress Plugin -->			
             </div>
         </div>
@@ -1045,17 +869,12 @@
 		
 </div>
 
-<div class="clear"></div>
-</div><!-- #main .wrapper -->
-<div class="clear"></div>
-		<footer id="colophon">
-		<div class="footer-container">
+</div>
+                <footer id="colophon">
+		            <div class="footer-container">
 						<div class="first-footer-area footer-area">
-				<div class="container">
-					<div class="vc_row wpb_row vc_row-fluid vc_custom_1611480804790 vc_column-gap-default ts-row-wide" data-vc-full-width="true" data-vc-full-width-init="true" style="position: relative; left: -10px; box-sizing: border-box; width: 794px; padding-left: 10px; padding-right: 10px;"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_hidden-xs">
-	<div class="wpb_wrapper">
-	<div class="vc_empty_space" style="height: 30px"><span class="vc_empty_space_inner"></span></div>	</div>
-</div></div><div class="vc_row-full-width"></div>	<div class="vc_row wpb_row vc_row-fluid text-light mobile-portrait-2-columns vc_custom_1611480725433 vc_column-gap-default ts-row-wide" data-vc-full-width="true" data-vc-full-width-init="true" style="position: relative; left: -10px; box-sizing: border-box; width: 794px; padding-left: 10px; padding-right: 10px;"><div class="wpb_column vc_column_container vc_col-sm-2 vc_col-xs-4">
+				            <div class="container">
+                                <div class="vc_row wpb_row vc_row-fluid text-light mobile-portrait-2-columns vc_custom_1611480725433 vc_column-gap-default ts-row-wide" data-vc-full-width="true" data-vc-full-width-init="true" style="position: relative; left: -10px; box-sizing: border-box; width: 794px; padding-left: 10px; padding-right: 10px;"><div class="wpb_column vc_column_container vc_col-sm-2 vc_col-xs-4">
 	<div class="wpb_wrapper">
 			<div class="ts-list-of-product-categories-wrapper ts-shortcode">
 			<div class="list-categories">
@@ -1079,7 +898,7 @@
 			<div class="ts-list-of-product-categories-wrapper ts-shortcode">
 			<div class="list-categories">
 								<h3 class="heading-title">Women Care</h3>
-								<ul>
+								<ul style="font-family: 'Bell MT'; font-size: large; font-weight: normal; font-style: normal; font-variant: normal; text-transform: none; color: #000080; visibility: visible; display: table-row; overflow: hidden; cursor: pointer; list-style-image: none; text-decoration: none;">
 										
 										<li><a href="https://www.yodawy.com/shop/women-care/body-splash-mist/">Body Splash &amp; Mist</a></li>
 										<li><a href="https://www.yodawy.com/shop/women-care/women-electric-shavers/">Electric Shavers for Women</a></li>
