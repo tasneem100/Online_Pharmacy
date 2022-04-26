@@ -75,6 +75,7 @@
     <Content Include="Footer.htm" />
     <Content Include="home.html" />
     <Content Include="homepage.aspx" />
+    <Content Include="images\cover.jpg" />
     <Content Include="Index.html" />
     <Content Include="Login.aspx" />
     <Content Include="menu.aspx" />
