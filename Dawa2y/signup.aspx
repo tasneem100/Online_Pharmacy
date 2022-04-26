@@ -10,7 +10,7 @@
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString ="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|onlinepharm.mdf;Integrated Security = True";
 
-        string strinsurt = String.Format("INSERT INTO Customer VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Fnametxt.Text, Lnametxt.Text, Unametxt.Text, Emailtxt.Text, phonetxt.Text, RadioButtonList1.SelectedValue,addresstxt.Text, insurancetxt.Text, passtxt.Text);
+        string strinsurt = String.Format("INSERT INTO Customer VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Fnametxt.Text, Lnametxt.Text, Unametxt.Text, Emailtxt.Text, phonetxt.Text, RadioButtonList1.SelectedValue,Birthtxt.Text,addresstxt.Text, insurancetxt.Text, passtxt.Text);
 
         SqlCommand cmdInsert = new SqlCommand(strinsurt, conn);
         try
