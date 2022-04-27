@@ -9,10 +9,6 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 170px;
-            height: 93px;
-        }
         .auto-style2 {
             width: 1371px;
             height: 131px;
@@ -21,12 +17,7 @@
             width: 84%;
             height: 75px;
         }
-        .auto-style4 {
-            width: 154px;
-            height: 97px;
-        }
         .auto-style5 {
-            height: 97px;
             width: 780px;
         }
 
@@ -34,14 +25,25 @@
        // background-color: whitesmoke;
         //margin-left:5px;
         }
+        .auto-style6 {
+            height: 104px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .auto-style7 {
+            width: 185px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server" class="auto-style2">
+        <div>
+        </div>
         <table class="auto-style3">
             <tr>
-                <td class="auto-style4">
-                    <img alt="Logo" class="auto-style1" src="images/medical-pharmacy-logo.jpg" /></td>
+                <td class="auto-style7">
+                    <img alt="logo" class="auto-style6" src="imgs/medical-pharmacy-logo.jpeg" /></td>
                 <td class="auto-style5" >
                     <asp:Menu ID="Menu1" runat="server"  StaticMenuStyle-BackColor="#339966" BorderStyle="None" Font-Names="Agency FB" Font-Size="Larger" ForeColor="White"  OnMenuItemClick="Menu1_MenuItemClick1" Orientation="Horizontal" BackColor="#339966" Height="100" Width="1000">
                         <DynamicItemTemplate>
@@ -51,7 +53,7 @@
                             <asp:MenuItem Text="Home" Value="Home" ></asp:MenuItem>
                             <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx" Target="F5"></asp:MenuItem>
                             <asp:MenuItem Text="Signup" Value="Signup" NavigateUrl="~/signup.aspx" Target="F5"></asp:MenuItem>
-                            <asp:MenuItem Text="Categories" Value="Categories"></asp:MenuItem>
+                            <asp:MenuItem Text="Categories" Value="Categories" NavigateUrl="~/categories.aspx" Target="F5"></asp:MenuItem>
                             <asp:MenuItem Text="Contact" Value="Contact"></asp:MenuItem>
                             <asp:MenuItem Text="Store Locator" Value="Store Locator"></asp:MenuItem>
                             <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/aboutus.aspx" Target="F5"></asp:MenuItem>
@@ -64,8 +66,6 @@
                 </td>
             </tr>
         </table>
-        <div>
-        </div>
     </form>
 </body>
 </html>
