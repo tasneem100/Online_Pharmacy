@@ -63,19 +63,19 @@
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style7">
-                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/userhome.aspx">Admin Home</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/adminhome.aspx">Admin Home</asp:HyperLink>
                                 </td>
                                 <td class="auto-style8">
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/homepage.aspx">Accounts</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/accountslist.aspx">Accounts</asp:HyperLink>
                                 </td>
                                 <td class="auto-style9">
-                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/homepage.aspx">Products</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/products.aspx">Products</asp:HyperLink>
                                 </td>
                                 <td class="auto-style11">
                                     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/cart.aspx">Messeges</asp:HyperLink>
                                 </td>
                                 <td>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/homepage.aspx">Track orders</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/products.aspx">Track orders</asp:HyperLink>
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
