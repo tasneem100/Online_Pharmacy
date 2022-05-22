@@ -4,11 +4,12 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         string username = "";
+        string lname="";
         //read any request from browser: request control 
         if (Request.Cookies["userInfo"] != null) {//check a certain key
             username = Request.Cookies["userInfo"].Values["usern"];
-
-            lblmsgx.Text = "Welcome " + username + " to Dawa2y!";
+            lname= Request.Cookies["userInfo"].Values["passw"];////////////////
+            lblmsgx.Text = "Welcome " + username + lname + " to Dawa2y!";
         }
     }
 </script>

@@ -42,13 +42,13 @@ namespace Dawa2y
         protected global::System.Web.UI.WebControls.Image Image;
 
         /// <summary>
-        /// lblmsgx control.
+        /// msg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblmsgx;
+        protected global::System.Web.UI.WebControls.Label msg;
 
         /// <summary>
         /// HyperLinkx control.
