@@ -1,39 +1,6 @@
-﻿<%@ Page Language="C#" %>
-<%@ Import Namespace="System.Data.SqlClient" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="Dawa2y.signup" %>
 <!DOCTYPE html>
-<script runat="server">
 
-    protected void BTNsubmit_Click(object sender, EventArgs e)
-    {
-        lblmsg.Text = "function has been executed";
-        //create sql object
-        SqlConnection conn = new SqlConnection();
-        conn.ConnectionString ="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|onlinepharm.mdf;Integrated Security = True";
-
-        string strinsurt = String.Format("INSERT INTO Customer VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Fnametxt.Text, Lnametxt.Text, Unametxt.Text, Emailtxt.Text, phonetxt.Text, RadioButtonList1.SelectedValue,Birthtxt.Text,addresstxt.Text, insurancetxt.Text, passtxt.Text);
-
-        SqlCommand cmdInsert = new SqlCommand(strinsurt, conn);
-        try
-        {
-            conn.Open();
-            cmdInsert.ExecuteNonQuery();
-
-            conn.Close();
-            lblmsg.Text = "connection worked!";
-        }
-        catch (SqlException err)
-        {
-            if (err.Number == 2627)
-                lblmsg.Text = "The Username " + Unametxt.Text + " already used, Please choose another !!";
-            else
-                lblmsg.Text = "Database error, Please try later !!";
-        }
-        catch
-        {
-            lblmsg.Text = "The system is not available at the moment, you may try later !!";
-        }
-    }
-</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>

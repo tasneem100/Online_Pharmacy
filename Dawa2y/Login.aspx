@@ -1,45 +1,6 @@
-﻿<%@ Page Language="C#" %>
-<%@ Import Namespace="System.Data.SqlClient" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Dawa2y.Login" %>
 <!DOCTYPE html>
 
-<script runat="server">
-    protected void btnLogin_Click(object sender, EventArgs e)
-    {
-
-        // Authenticating the user
-
-        // 1- Create Connection Object
-        SqlConnection conn = new SqlConnection();
-        conn.ConnectionString ="Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|onlinepharm.mdf;Integrated Security = True";
-
-
-
-
-        // 2- Create Sql Select statement string
-        string strSelect = "SELECT * FROM customer "
-            + " WHERE Username = '" + loginnametxt.Text + "' AND "
-            + " Password = '" + loginpasstxt.Text + "'";
-
-        // 3- Create Sql command
-        SqlCommand cmdSelect = new SqlCommand(strSelect, conn);
-
-        // 4- Create Sql Data Reader
-        SqlDataReader reader;
-
-        // 5- Open the databse
-        conn.Open();
-
-        // 6- Execute Sql command
-        reader = cmdSelect.ExecuteReader();
-      // 7- Check reader
-        
-
-        // 8- Close the database
-        conn.Close();
-
-
-    }
-</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -48,122 +9,161 @@
         .auto-style16 {
             height: 324px;
         }
-        .auto-style1 {
+        .auto-style31 {
             width: 100%;
-            height: 248px;
         }
-        .auto-style6 {
+        .auto-style32 {
             text-align: center;
-            height: 51px;
+            width: 92px;
+            height: 71px;
         }
-        .auto-style7 {
-            text-align: right;
-            width: 138px;
-            height: 30px;
+        .auto-style33 {
+            width: 230px;
         }
-        .auto-style8 {
-            text-align: left;
-            height: 30px;
-            width: 87px;
+        .auto-style34 {
+            width: 92px;
         }
-        .auto-style3 {
-            text-align: left;
-            height: 30px;
-            width: 132px;
+        .auto-style35 {
+            width: 206px;
         }
-        .auto-style13 {
-            text-align: right;
-            width: 138px;
-            height: 37px;
+        .auto-style36 {
+            height: 71px;
         }
-        .auto-style11 {
-            width: 87px;
-            height: 37px;
+        .auto-style37 {
+            width: 230px;
+            height: 71px;
         }
-        .auto-style12 {
-            height: 37px;
-            width: 132px;
+        .auto-style38 {
+            width: 206px;
+            height: 71px;
         }
-        .auto-style14 {
-            text-align: left;
-            height: 58px;
+        .auto-style42 {
+            width: 230px;
+            height: 39px;
         }
-        .auto-style18 {
-            text-align: left;
-            height: 30px;
-            width: 46px;
+        .auto-style43 {
+            width: 92px;
+            height: 39px;
         }
-        .auto-style19 {
-            height: 37px;
-            width: 46px;
+        .auto-style44 {
+            width: 206px;
+            height: 39px;
         }
-        .auto-style20 {
-            text-align: center;
-            height: 58px;
-            width: 46px;
+        .auto-style45 {
+            height: 39px;
         }
-        .auto-style21 {
-            height: 37px;
-            width: 28px;
+        .auto-style47 {
+            width: 230px;
+            height: 42px;
+        }
+        .auto-style48 {
+            width: 92px;
+            height: 42px;
+        }
+        .auto-style49 {
+            width: 206px;
+            height: 42px;
+        }
+        .auto-style50 {
+            height: 42px;
+        }
+        .auto-style52 {
+            width: 230px;
+            height: 41px;
+        }
+        .auto-style53 {
+            width: 92px;
+            height: 41px;
+        }
+        .auto-style54 {
+            width: 206px;
+            height: 41px;
+        }
+        .auto-style55 {
+            height: 41px;
+        }
+        .auto-style56 {
+            width: 267px;
+            height: 71px;
+        }
+        .auto-style57 {
+            width: 267px;
+            height: 39px;
+        }
+        .auto-style58 {
+            width: 267px;
+            height: 42px;
+        }
+        .auto-style59 {
+            width: 267px;
+            height: 41px;
+        }
+        .auto-style60 {
+            width: 267px;
         }
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="auto-style16">
-            <table cellpadding="3" class="auto-style1">
+            <table class="auto-style31">
                 <tr>
-                    <td class="auto-style6" colspan="5">
+                    <td class="auto-style56"></td>
+                    <td class="auto-style37"></td>
+                    <td class="auto-style32">
                         <asp:Label ID="Label10" runat="server" Font-Names="Agency FB" Font-Size="Large" Text="Login Page"></asp:Label>
                     </td>
+                    <td class="auto-style38"></td>
+                    <td class="auto-style36"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">
+                    <td class="auto-style57"></td>
+                    <td class="auto-style42">
                         <asp:Label ID="Label9" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Username or Email:"></asp:Label>
                     </td>
-                    <td class="auto-style8">
+                    <td class="auto-style43">
                         <asp:TextBox ID="loginnametxt" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">
+                    <td class="auto-style44">
 
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="loginnametxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style3">
-
-                        &nbsp;</td>
-                    <td class="auto-style18"></td>
+                    <td class="auto-style45"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style13">
+                    <td class="auto-style58"></td>
+                    <td class="auto-style47">
                         <asp:Label ID="Label11" runat="server" Font-Names="Bell MT" Font-Size="Medium" Text="Password:"></asp:Label>
                     </td>
-                    <td class="auto-style21">
+                    <td class="auto-style48">
                         <asp:TextBox ID="loginpasstxt" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
-                    <td class="auto-style11">
-
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="loginpasstxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
-                    </td>
-                    <td class="auto-style12">
+                    <td class="auto-style49">
                         <input onchange="document.getElementById('loginpasstxt').type=this.checked ? 'text' : 'password'" type="checkbox" /><asp:Label ID="Label22" runat="server" Font-Names="Bell MT" Font-Size="Small" Text="Show Password"></asp:Label>
 
                     </td>
-                    <td class="auto-style19">
-                        &nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style11" colspan="2">
-                        <asp:Button ID="BTNLogin0" runat="server" CssClass="auto-style15" Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" Height="27px" Text="Login" Width="113px" />
+                    <td class="auto-style50">
+
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="loginpasstxt" ErrorMessage="This is a required field!!" Font-Names="Arial" Font-Size="Small" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style12">&nbsp;</td>
-                    <td class="auto-style19">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style14" colspan="4">
+                    <td class="auto-style59"></td>
+                    <td class="auto-style52">
+                        <asp:Button ID="BTNLogin0" runat="server" CssClass="auto-style15" Font-Names="Agency FB" Font-Size="Large" Font-Strikeout="False" Height="27px" Text="Login" Width="113px" OnClick="BTNLogin0_Click" />
+                    </td>
+                    <td class="auto-style53"></td>
+                    <td class="auto-style54">&nbsp;</td>
+                    <td class="auto-style55"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style60">&nbsp;</td>
+                    <td class="auto-style33">
                         <asp:Label ID="lblMsg" runat="server" Font-Names="Bell MT" Font-Size="X-Large" ForeColor="#666699"></asp:Label>
                     </td>
-                    <td class="auto-style20">&nbsp;</td>
+                    <td class="auto-style34">&nbsp;</td>
+                    <td class="auto-style35">&nbsp;</td>
+                    <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
