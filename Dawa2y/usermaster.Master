@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="usermaster.master.cs" Inherits="Dawa2y.usermaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 103px;
+        }
+        .auto-style3 {
+            height: 31px;
+        }
+        .auto-style4 {
+            height: 511px;
+        }
+        .auto-style6 {
+            width: 105px;
+        }
+        .auto-style7 {
+            width: 129px;
+        }
+        .auto-style8 {
+            width: 148px;
+        }
+        .auto-style9 {
+            width: 119px;
+        }
+        .auto-style10 {
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style6">
+                                    <asp:Image ID="Image1" runat="server" Height="86px" Width="105px" />
+                                </td>
+                                <td>
+                        <asp:Label ID="lblmsg" runat="server" Font-Names="Bell MT" Font-Size="Large"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style7">
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/userhome.aspx">User Home</asp:HyperLink>
+                                </td>
+                                <td class="auto-style8">
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/homepage.aspx">My Account</asp:HyperLink>
+                                </td>
+                                <td class="auto-style9">
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/homepage.aspx">Ordering</asp:HyperLink>
+                                </td>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/cart.aspx">Cart</asp:HyperLink>
+                                </td>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/homepage.aspx">Favorites</asp:HyperLink>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4" style="vertical-align: top">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">
+                        <center>
+                            <FONT FACE="arial" color="green" size="-1">
+                                 Powered By Dawa2y Pharmacy Team &copy; 2021 <a href="mailto:20194738@fue.edu.eg">contact Webmaster</a>
+                            </FONT>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </form>
+</body>
+</html>
