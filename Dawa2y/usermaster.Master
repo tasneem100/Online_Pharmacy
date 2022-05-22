@@ -5,13 +5,13 @@
     //function done without any click
     protected void Page_Load(object sender, EventArgs e)
     {
-        string username = "";
+        string fname = "";
         string lname="";
         //read any request from browser: request control 
         if (Request.Cookies["userInfo"] != null) {//check a certain key
-            username = Request.Cookies["userInfo"].Values["usern"];
-            lname= Request.Cookies["userInfo"].Values["passw"];////////////////
-            msg.Text =  username +" "+ lname;
+            fname = Request.Cookies["userInfo"].Values["fname"];
+            lname= Request.Cookies["userInfo"].Values["lname"];
+            msg.Text =  fname +" "+ lname;
         }
     }
 </script>
