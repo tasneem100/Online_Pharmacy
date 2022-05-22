@@ -42,12 +42,16 @@ namespace Dawa2y
             // 6- Execute Sql command
             reader = cmdSelect.ExecuteReader();
             // 7- Check reader
-
-
+            if (reader.Read())
+            {
+                lblMsg.Text = "Welcome " + loginnametxt.Text + "To Dawa2y Site!!";
+            }
+            else
+            {
+                lblMsg.Text = "Invalid Username and/or Password, you may try again!!";
+            }
             // 8- Close the database
             conn.Close();
-
-            lblMsg.Text = "welcome " + loginnametxt.Text;
         }
     }
 }
