@@ -38,7 +38,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="formx" runat="server">
         <div>
             <table class="auto-style1">
                 <tr>
@@ -46,10 +46,10 @@
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style6">
-                                    <asp:Image ID="Image1" runat="server" Height="86px" Width="105px" />
+                                    <asp:Image ID="Image" runat="server" Height="86px" Width="105px" />
                                 </td>
                                 <td>
-                        <asp:Label ID="lblmsg" runat="server" Font-Names="Bell MT" Font-Size="Large"></asp:Label>
+                        <asp:Label ID="lblmsgx" runat="server" Font-Names="Bell MT" Font-Size="Large"></asp:Label>
                                 </td>
                             </tr>
                         </table>
@@ -60,22 +60,22 @@
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style7">
-                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/userhome.aspx">User Home</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLinkx" runat="server" NavigateUrl="~/userhome.aspx">User Home</asp:HyperLink>
                                 </td>
                                 <td class="auto-style8">
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/homepage.aspx">My Account</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLinky" runat="server" NavigateUrl="~/homepage.aspx">My Account</asp:HyperLink>
                                 </td>
                                 <td class="auto-style9">
-                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/homepage.aspx">Orders</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLinkz" runat="server" NavigateUrl="~/homepage.aspx">Orders</asp:HyperLink>
                                 </td>
                                 <td>
-                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/cart.aspx">Cart</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLinkw" runat="server" NavigateUrl="~/cart.aspx">Cart</asp:HyperLink>
                                 </td>
                                 <td>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/homepage.aspx">Favorites</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLinkq" runat="server" NavigateUrl="~/homepage.aspx">Favorites</asp:HyperLink>
                                 </td>
                                 <td>
-                                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/cart.aspx">Messeges</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLinks" runat="server" NavigateUrl="~/cart.aspx">Messeges</asp:HyperLink>
                                 </td>
                             </tr>
                         </table>

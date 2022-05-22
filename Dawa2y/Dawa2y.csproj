@@ -83,6 +83,9 @@
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
     <Content Include="userhome.aspx" />
+    <Content Include="accountslist.aspx" />
+    <Content Include="adminhome.aspx" />
+    <Content Include="products.aspx" />
     <Content Include="cart.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +125,13 @@
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminmaster.Master.cs">
+      <DependentUpon>adminmaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminmaster.Master.designer.cs">
+      <DependentUpon>adminmaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="usermaster.Master.cs">
       <DependentUpon>usermaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,6 +146,27 @@
     <Compile Include="userhome.aspx.designer.cs">
       <DependentUpon>userhome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="accountslist.aspx.cs">
+      <DependentUpon>accountslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accountslist.aspx.designer.cs">
+      <DependentUpon>accountslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.aspx.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminhome.aspx.designer.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cart.aspx.cs">
       <DependentUpon>cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -147,6 +178,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="usermaster.Master" />
+    <Content Include="adminmaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

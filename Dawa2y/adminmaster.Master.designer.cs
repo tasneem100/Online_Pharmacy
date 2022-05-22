@@ -11,7 +11,7 @@ namespace Dawa2y
 {
 
 
-    public partial class usermaster
+    public partial class adminmaster
     {
 
         /// <summary>

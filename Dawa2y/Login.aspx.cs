@@ -5,8 +5,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Data;
+
 namespace Dawa2y
 {
+
+
     public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -41,10 +45,31 @@ namespace Dawa2y
 
             // 6- Execute Sql command
             reader = cmdSelect.ExecuteReader();
-            // 7- Check reader
+            // 7- Check reader authentication
             if (reader.Read())
             {
-                Response.Redirect("~/userhome.aspx");
+                //create cookie
+                HttpCookie coco = new HttpCookie("userInfo");
+                coco.Values.Add("usern", loginnametxt.Text);
+                coco.Values.Add("passw", loginpasstxt.Text);
+
+                //life time of cookie 3 days
+                coco.Expires = DateTime.Now.AddDays(3);
+
+                //sends msgs... from server to client by using response (backend to frontend)
+                Response.Cookies.Add(coco);
+
+
+
+
+                if (loginnametxt.Text == "Admin")
+                {
+                    Response.Redirect("~/adminhome.aspx");
+                }
+                else
+                {
+                    Response.Redirect("~/userhome.aspx");
+                }
                // lblMsg.Text = "Welcome " + loginnametxt.Text + "To Dawa2y Site!!";
             }
             else

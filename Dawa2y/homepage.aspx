@@ -22,7 +22,7 @@
                             padding: 5px;
                             font-size: 12px;
                             text-transform: none;
-							;
+							
                         }
                         
                         #ays_tooltip > *, .ays_tooltip_class > * {
@@ -62,7 +62,7 @@
         }
 
             </style>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400%7CNunito+Sans:900%2C400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400%7CNunito+Sans:900%2C400" rel="stylesheet" property="stylesheet" media="all" type="text/css" />
 
     <title></title>
 </head>
@@ -92,11 +92,11 @@
 							<form method="get" action="https://www.yodawy.com/" id="searchform-557">
 	<div class="search-table">
 		<div class="search-field search-content">
-			<input type="text" value="" name="s" id="s-557" placeholder="Search for products" autocomplete="off">
-						<input type="hidden" name="post_type" value="product">
+			<input type="text" value="" name="s" id="s-557" placeholder="Search for products" autocomplete="off" />
+						<input type="hidden" name="post_type" value="product" />
 					</div>
 		<div class="search-button">
-			<input type="submit" id="searchsubmit-557" value="Search">
+			<input type="submit" id="searchsubmit-557" value="Search" />
 		</div>
 	</div>
 </form>							
@@ -194,7 +194,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="199" src="https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care-300x177.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care-160x94.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care-310x183.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="199" src="https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care-300x177.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care-160x94.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/womwn-care-310x183.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -218,7 +218,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="260" src="https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2-300x231.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2-160x123.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2-310x239.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="260" src="https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2-300x231.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2-160x123.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/dermocosmatics-2-310x239.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -242,7 +242,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="393" src="https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1-257x300.jpg 257w, https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1-119x139.jpg 119w, https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1-310x362.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="393" src="https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1-257x300.jpg 257w, https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1-119x139.jpg 119w, https://www.yodawy.com/wp-content/uploads/2021/01/men-care-1-310x362.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -266,7 +266,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="233" src="https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness-300x207.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness-160x111.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness-310x214.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="233" src="https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness-300x207.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness-160x111.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/sexual-wellness-310x214.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -290,7 +290,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="313" src="https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1-300x279.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1-150x139.jpg 150w, https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1-310x288.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="313" src="https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1-300x279.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1-150x139.jpg 150w, https://www.yodawy.com/wp-content/uploads/2021/01/beauty-1-310x288.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -314,7 +314,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="199" src="https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1-300x177.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1-160x94.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1-310x183.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="199" src="https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1-300x177.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1-160x94.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/bath-body-1-310x183.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -338,7 +338,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="260" src="https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1-300x231.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1-160x123.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1-310x239.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="260" src="https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1-300x231.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1-160x123.jpg 160w, https://www.yodawy.com/wp-content/uploads/2021/01/oral-care-1-310x239.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -362,7 +362,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="313" src="https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1-300x279.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1-150x139.jpg 150w, https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1-310x288.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="313" src="https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1-300x279.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1-150x139.jpg 150w, https://www.yodawy.com/wp-content/uploads/2021/01/contact-lenses-1-310x288.jpg 310w" sizes="(max-width: 337px) 100vw, 337px" />			
 				</div>
 				
 				<span class="overlay"></span>
@@ -386,7 +386,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="393" src="https://www.yodawy.com/wp-content/uploads/2021/01/baby-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/baby-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/baby-1-257x300.jpg 257w, https://www.yodawy.com/wp-content/uploads/2021/01/baby-1-119x139.jpg 119w, https://www.yodawy.com/wp-content/uploads/2021/01/baby-1-310x362.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="393" src="https://www.yodawy.com/wp-content/uploads/2021/01/baby-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/baby-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/baby-1-257x300.jpg 257w, https://www.yodawy.com/wp-content/uploads/2021/01/baby-1-119x139.jpg 119w, https://www.yodawy.com/wp-content/uploads/2021/01/baby-1-310x362.jpg 310w" sizes="(max-width: 337px) 100vw, 337px"/>			
 				</div>
 				
 				<span class="overlay"></span>
@@ -410,7 +410,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="313" src="https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1-300x279.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1-150x139.jpg 150w, https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1-310x288.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="313" src="https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1-300x279.jpg 300w, https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1-150x139.jpg 150w, https://www.yodawy.com/wp-content/uploads/2021/01/hair-care-1-310x288.jpg 310w" sizes="(max-width: 337px) 100vw, 337px"/>			
 				</div>
 				
 				<span class="overlay"></span>
@@ -434,7 +434,7 @@
 							
 			<div class="banner-bg">
 				<div class="bg-content">				
-				<img width="337" height="393" src="https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1-257x300.jpg 257w, https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1-119x139.jpg 119w, https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1-310x362.jpg 310w" sizes="(max-width: 337px) 100vw, 337px">			
+				<img width="337" height="393" src="https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1.jpg" class="img" alt="" loading="lazy" srcset="https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1.jpg 337w, https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1-257x300.jpg 257w, https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1-119x139.jpg 119w, https://www.yodawy.com/wp-content/uploads/2021/01/personal-care-1-310x362.jpg 310w" sizes="(max-width: 337px) 100vw, 337px"/>			
 				</div>
 				
 				<span class="overlay"></span>
@@ -470,7 +470,7 @@
 		<div class="thumbnail-wrapper">
 			<a href="https://www.yodawy.com/product/la-roche-posay-anthelios-xl-gel-cream-dry-touch-spf-50-50ml/">
 
-				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2021/02/3337875546409-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2021/02/3337875546409-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"></figure>
+				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2021/02/3337875546409-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2021/02/3337875546409-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"/></figure>
 			</a>
 					<div class="product-label">
 	<div><span class="onsale"></span></div>	</div>
@@ -488,7 +488,7 @@
 		<div class="thumbnail-wrapper">
 			<a href="https://www.yodawy.com/product/garnier-skinactive-charcoal-tissue-mask-28-gm/">
 
-				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2020/12/3600542097086-scaled-1-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2020/12/3600542097086-scaled-1-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"></figure>
+				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2020/12/3600542097086-scaled-1-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2020/12/3600542097086-scaled-1-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"/></figure>
 			</a>
 					<div class="product-label">
 		</div>
@@ -524,7 +524,7 @@
 		<div class="thumbnail-wrapper">
 			<a href="https://www.yodawy.com/product/pampers-premium-care-newbaby-size-1-2-5-kilos-60-pieces/">
 
-				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2020/12/8001090559494-1-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2020/12/8001090559494-1-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"></figure>
+				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2020/12/8001090559494-1-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2020/12/8001090559494-1-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"/></figure>
 			</a>
 					<div class="product-label">
 		</div>
@@ -596,7 +596,7 @@
 		<div class="thumbnail-wrapper">
 			<a href="https://www.yodawy.com/product/durex-performax-intense-condoms-3-pieces/">
 
-				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2021/02/5052197003789-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2021/02/5052197003789-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"></figure>
+				<figure class="no-back-image"><img src="https://www.yodawy.com/wp-content/uploads/2021/02/5052197003789-350x350.jpg" data-src="https://www.yodawy.com/wp-content/uploads/2021/02/5052197003789-350x350.jpg" class="attachment-shop_catalog wp-post-image ts-lazy-load loaded" alt="" width="350" height="350"/></figure>
 			</a>
 	<div class="product-group-button one-button no-addtocart"></div>			
 		</div>
