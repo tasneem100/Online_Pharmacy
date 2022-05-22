@@ -82,6 +82,8 @@
     <Content Include="images\medical-pharmacy-logo.jpg" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
+    <Content Include="userhome.aspx" />
+    <Content Include="cart.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aboutus.aspx.cs">
@@ -126,6 +128,20 @@
     </Compile>
     <Compile Include="usermaster.Master.designer.cs">
       <DependentUpon>usermaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userhome.aspx.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userhome.aspx.designer.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

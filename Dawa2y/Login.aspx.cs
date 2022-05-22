@@ -44,7 +44,8 @@ namespace Dawa2y
             // 7- Check reader
             if (reader.Read())
             {
-                lblMsg.Text = "Welcome " + loginnametxt.Text + "To Dawa2y Site!!";
+                Response.Redirect("~/userhome.aspx");
+               // lblMsg.Text = "Welcome " + loginnametxt.Text + "To Dawa2y Site!!";
             }
             else
             {
