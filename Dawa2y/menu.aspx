@@ -51,7 +51,7 @@
                         </DynamicItemTemplate>
                         <Items>
                             <asp:MenuItem Text="Home" Value="Home" ></asp:MenuItem>
-                            <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx" Target="F5"></asp:MenuItem>
+                            <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/Login.aspx" Target="_top"></asp:MenuItem>
                             <asp:MenuItem Text="Signup" Value="Signup" NavigateUrl="~/signup.aspx" Target="F5"></asp:MenuItem>
                             <asp:MenuItem Text="Categories" Value="Categories" NavigateUrl="~/categories.aspx" Target="F5"></asp:MenuItem>
                             <asp:MenuItem Text="Contact" Value="Contact"></asp:MenuItem>

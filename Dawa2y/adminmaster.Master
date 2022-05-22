@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="usermaster.master.cs" Inherits="Dawa2y.usermaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminmaster.Master.cs" Inherits="Dawa2y.usermaster" %>
 
 <!DOCTYPE html>
 
@@ -35,6 +35,9 @@
         .auto-style10 {
             height: 32px;
         }
+        .auto-style11 {
+            width: 154px;
+        }
     </style>
 </head>
 <body>
@@ -60,23 +63,21 @@
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style7">
-                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/userhome.aspx">User Home</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/userhome.aspx">Admin Home</asp:HyperLink>
                                 </td>
                                 <td class="auto-style8">
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/homepage.aspx">My Account</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/homepage.aspx">Accounts</asp:HyperLink>
                                 </td>
                                 <td class="auto-style9">
-                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/homepage.aspx">Orders</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/homepage.aspx">Products</asp:HyperLink>
+                                </td>
+                                <td class="auto-style11">
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/cart.aspx">Messeges</asp:HyperLink>
                                 </td>
                                 <td>
-                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/cart.aspx">Cart</asp:HyperLink>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/homepage.aspx">Track orders</asp:HyperLink>
                                 </td>
-                                <td>
-                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/homepage.aspx">Favorites</asp:HyperLink>
-                                </td>
-                                <td>
-                                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/cart.aspx">Messeges</asp:HyperLink>
-                                </td>
+                                <td>&nbsp;</td>
                             </tr>
                         </table>
                     </td>
